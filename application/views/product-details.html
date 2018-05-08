@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lohkuy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/mystyle.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="logo" href="#myPage">Logo</a>
+    </div>
+    <div class="col-sm-3 col-md-8">
+        <form class="navbar-form navbar-center" role="search">
+        <div class="input-group searchbar">
+            <input type="text" class="form-control" placeholder="Aku mau belanja.." name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+        <li class="dropdown">
+         <a href="<?php echo base_url(); ?>core/do_logout">Logout</a></li>  
+          <ul class="dropdown-menu">
+            <li style="width: 280px;">
+              <form class="form-horizontal">
+                <div class="form-group donotchange">
+                <div class="col-xs-8">
+                  <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                </div>
+                <div class="form-group donotchange">
+                  <div class="col-xs-8">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group donotchange">
+                    <input type="submit" id="loginbutton" class="btn btn-default" value="Login"></input>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="btn-nav">
+          <a class="btn btn-default btn-sm navbar-btn" href="register.html">Daftar!</a></div>
+        </li>
+        <li><div style="width: 20px;"></div></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="band" class="container">
+  <div class="row">
+    <p class="page">Halaman Utama > Pencarian > Captain America's Shield > Details</p>
+    <hr class="style1">
+    <h3 id="searchname">Detail "Captain America's Shield"</h3>
+    <hr class="style1">
+  </div>
+  <div class="col-md-2" style="padding-left: 0;">
+    <p>Cari lebih detail</p>
+    <div class="category">
+    <p style="margin: 0px 10px;">Kategori</p>
+      <ul style="padding-left: 30px;">
+        <li><a href="">Hobi & Koleksi</a></li>
+        <li><a href="">Olahraga</a></li>
+        <li><a href="">Elektronik</a></li>
+        <li><a href="">Fashion Pria</a></li>
+        <li><a href="">Fashion Wanita</a></li>
+        <li><a href="">Komputer</a></li>
+        <li><a href="">Perlengkapan Bayi</a></li>
+        <li><a href="">Rumah Tangga</a></li>
+        <li><a href="">Fashion Anak</a></li>
+        <li><a href="">Perlengkapan Kantor</a></li>
+        <li><a href="">Handphone</a></li>
+        <li><a href="">Motor</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-8">  
+    <div class="row">
+      <h2 class="ah">Ringkasan Iklan</h2>
+        <div class="akun">
+          <div class="thumbnail poto">
+            <img src="img/item/item2.jpg" alt="Paris" class="pp">
+          </div>
+          <div class="profil-detail">
+            <h2>Captain America's Shield</h2>
+            <table style="margin-left: 3px;max-width: 500px;">
+              <tr>
+                <td width="80">Harga</td>
+                <td width="20">:</td>
+                <td>Rp.947.860.947</td>
+              </tr>
+              <tr>
+                <td>Kategory</td><td>:</td><td>Super Power</td>
+              </tr>
+              <tr>
+                <td>Deskripsi</td><td>:</td>
+                <td>Cras in pellentesque tincidunt elit purus lectus, vel ut aliquet, elementum. Dolor sum lores</td>
+              </tr>
+            </table>
+            <a href="user-edit.html"><button class="btn btn-default" id="edit">Tambah ke Cart</button></a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="about-header">
+  Situs jual beli online mudah & terpercaya
+</div>
+<div class="about-detail">
+    <p>Developed by:</p>
+    <p>Stefanus Anugrah Pribadi - Ignatius Chandra Christian - Willy Aditya Nugraha - Bernardus Alexander Habeahan</p>
+    <br>
+    <p>Powered by:</p>
+    <p>Bootstrap - jQuery - Codeigniter</p>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>Bootstrap Theme Modified By Chandra</p> 
+</footer>
+
+</body>
+</html>

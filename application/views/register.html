@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ayo Daftar dan Jual Beli Online Sekarang - Register | Lohkuy</title>
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/mystyle.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="text-center">
+			<div class="search-box">
+				<div class="caption">
+					<h1>ShoppingKuy</h1>
+					<p>Daftar akun baru sekarang</p>
+				</div>
+				<form action="<?php echo base_url(); ?>/core/registerMember" class="loginForm" method="post">
+					<div class="input-group">
+						<input name="nama" type="text" id="name" class="form-control" placeholder="Nama Lengkap">
+						<input name="email" type="email" id="email" class="form-control" placeholder="Email">
+						<input name="nohp" type="text" id="numb" class="form-control" placeholder="Nomor Handphone">
+						<input name="passwd" type="password" id="paw" class="form-control" placeholder="Password">
+						<p>Dengan klik daftar, kamu telah menyetujui Aturan Penggunaan dan Kebijakan Privasi dari Lohkuy</p>
+						<input type="submit" id="submit" class="form-control" value="Daftar">
+					</div>
+					<h6 class="heading-1"><span>ATAU</span></h6>
+					<button class="btn btn-default socialbutton">Daftar dengan FB</button><br>
+					<button class="btn btn-default socialbutton">Daftar dengan Google</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

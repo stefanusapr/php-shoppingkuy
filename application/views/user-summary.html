@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lohkuy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/mystyle.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="<?php echo base_url(); ?>">Logo</a>
+    </div>
+    <div class="col-sm-3 col-md-8">
+        <form class="navbar-form navbar-center" role="search">
+        <div class="input-group searchbar">
+            <input type="text" class="form-control" placeholder="Aku mau belanja.." name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-inbox"></span></a></li>
+        <li class="dropdown">
+          <a href="<?php echo base_url(); ?>core/do_logout">Logout</a></li>  
+          <ul class="dropdown-menu">
+            <li style="width: 280px;">
+              <form class="form-horizontal">
+                <div class="form-group donotchange">
+                <div class="col-xs-8">
+                  <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                </div>
+                <div class="form-group donotchange">
+                  <div class="col-xs-8">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group donotchange">
+                    <input type="submit" id="loginbutton" class="btn btn-default" value="Login"></input>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li><div style="width: 20px;"></div></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="band" class="container">
+  <div class="row">
+    <p class="page">Halaman Utama > MyProfile > Ringkasan Akun</p>
+    <hr class="style1">
+    <?php $user_data = $this->session->userdata('user'); ?>
+    <h3 id="searchname">Halo, <?php echo $user_data['nama']; ?>!</h3>
+    <hr class="style1">
+  </div>
+  <div class="col-md-2" style="padding-left: 0;margin-top: 10px;">
+    <a href="<?php echo base_url(); ?>core/member/productAdd"><button class="btn form-control" id="jual">Jual Barang</button></a>
+    <div>
+      <ul style="padding-left: 30px;" class="profilnav">
+        <li class="active"><a href="">Ringkasan Akun</a></li>
+        <li><a href="<?php echo base_url(); ?>core/member/productList/">Barang Dijual</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-10">  
+    <div class="row">
+      <h2 class="ah">Ringkasan Akun</h2>
+        <div class="akun">
+          <div class="thumbnail poto">
+            <img src="<?php echo base_url(); ?>assets/img/item/imm.jpeg" alt="Paris" class="pp">
+          </div>
+          <div class="profil-detail">
+            <h2><?php echo $user_data['nama']; ?></h2>
+            <table style="margin-left: 3px">
+              <tr>
+                <td width="60">Email</td>
+                <td width="20">:</td>
+                <td><?php echo $user_data['email']; ?></td>
+              </tr>
+              <tr>
+                <td>No. HP</td><td>:</td><td><?php echo $user_data['nohp']; ?></td>
+              </tr>
+              <!-- <tr>
+                <td>Alamat</td><td>:</td><td>Jl.M.T Haryono Gg.Brawijaya II no.63</td>
+              </tr> -->
+            </table>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="about-header">
+  Situs jual beli online mudah & terpercaya
+</div>
+<div class="about-detail">
+    <p>Developed by:</p>
+    <p>Stefanus Anugrah Pribadi - Ignatius Chandra Christian - Willy Aditya Nugraha - Bernardus Alexander Habeahan</p>
+    <br>
+    <p>Powered by:</p>
+    <p>Bootstrap - jQuery - Codeigniter</p>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>Bootstrap Theme Modified By Chandra</p> 
+</footer>
+
+</body>
+</html>

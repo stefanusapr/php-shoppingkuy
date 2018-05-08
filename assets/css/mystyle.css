@@ -1,0 +1,541 @@
+/*Keseluruhan*/
+body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  #myCarousel {
+    margin-top:50px;
+  }
+  #tour {
+    background-color: #f5f5f5;
+  }
+  #sb {
+    border:solid 1px #ccc;
+    border-left: 0;
+  }
+  #sb:hover {
+    border:solid 1px #ccc;
+    border-left: 0;
+  }
+  .bg-1 {
+      background: #3eb3b9;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {
+    color: #a7a7a7;
+    letter-spacing: 5px;
+    font-size: 40px;
+  }
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .thumbnail a img {
+      max-height: 215px;
+      max-width: 288px;
+      border-bottom:solid 1px #e2e2e2;
+      margin: 0;
+      transition: .2s;
+  }
+  .thumbnail a img:hover {
+    opacity: 0.7;
+  }
+  .btn {
+      background-color: #3eb3b9;
+      color: #f1f1f1;
+      transition: .2s;
+  }
+  .btn-default {
+    border-color: #fff;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #3eb3b9;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #3eb3b9;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  .donotchange {
+    padding: 10px 20px 0px 20px;
+    margin-bottom: 2px;
+    width: 450px;
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #3eb3b9;
+      border: 0;
+      font-size: 12px !important;
+      letter-spacing: 2px;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #ffffff !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li div a:hover {
+      border: 1px solid #3eb3b9;
+      background-color: #fff;
+      color: #000 !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .navbar-center {
+      text-align: center;
+  }
+  .searchbar {
+      width: 700px;
+  }
+  .navbar-center .searchbar .input-group-btn {
+      width: 20px;
+  }
+  .dropdown a.dropdown-toggle:hover {
+    color: #ade2e4 !important;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #3eb3b9 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  #loginbutton{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 243px;
+    height: 34px;
+  }
+   .about-header {
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    border-top :solid 1px #ddd;
+  }
+  .about-detail {
+    text-align: center;
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 250px;
+    padding: 50px;
+    border :solid 1px #ddd;
+    border-top :solid 1px #3eb3b9;
+  }
+  .mastercart {
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .glyphicon-shopping-cart {
+    font-size: 17px !important;
+  }
+  .glyphicon-shopping-cart:hover {
+    color: #ade2e4;
+  }
+  .glyphicon-inbox {
+    font-size: 17px !important;
+  }
+  .glyphicon-inbox:hover {
+    color: #ade2e4;
+  }
+  td {
+    vertical-align: top;
+  }
+  footer {
+      background-color: #e6e6e6;
+      color: #777;
+      padding: 32px;
+      border-top :solid 1px #e2e2e2;
+      padding-top: 10px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  textarea {
+      resize: none;
+  }
+  
+  /*khusus register*/
+  .loginForm .input-group .form-control {
+    margin: 5px 0px 5px 0px;
+    font-size: 18px;
+    height: 45px; 
+  }
+  .input-group .form-control:last-child {
+    border-radius: 0.4em !important;
+  }
+  .loginForm input[type=submit]{
+    background:#3eb3b9;
+    color:#fff;
+    border-radius: 100;
+    height: 45px;
+  }
+  .loginForm input[type=submit]:hover{
+    background:#379da2;
+    color:#fff;
+  }
+  .loginForm{
+    margin: 0 auto;
+    width: 420px;
+  }
+  .heading-1{
+    position:relative;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  .heading-1:before {
+    content: "";
+    display: block;
+    border-top: solid 2px #bebebe;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+  }
+  .heading-1 span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .socialbutton{
+    margin: 0 auto;
+    width: 420px; 
+    height: 43px;
+    margin-bottom: 10px;
+    background-color: #f9f8f8;
+    color: black;
+    border-color: #d8d8d8;
+  }
+  .socialbutton:hover{
+    color: #3eb3b9;
+  }
+
+  /*khusus search*/
+  #band {
+    padding: 55px 10px;
+    margin: 0px 30px;
+    width: 1300px;
+  }
+  #searchname {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  hr.style1{
+  border-top: 1px solid #e2e0e0;
+  margin: 5px 0px;
+  }
+  .page {
+    margin-bottom: 0px;
+  }
+  .ts {
+    background-color: #f1f0f0;
+  }
+  .category {
+    background-color: #f1f0f0; 
+    border-top: 2px solid #3eb3b9;
+  }
+  div.category ul li{
+    list-style: none; 
+  }
+  div.category ul li a{
+    color: #249aa0;
+    font-size: 13px; 
+  }
+  div.category ul li:before {
+     content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #249aa0; 
+  }
+
+  /*khusus cart*/
+    .mychart {
+    border: solid 1px #ddd;
+    border-bottom: 0;
+    background-color: #fff;
+    height: 102px;
+    padding: 15px;
+  }
+  .keranjang {
+    border-bottom: solid 1px #ddd;
+  }
+  .carttumb {
+    border: solid 1px #eee;
+    width: 71px;
+    height: 71px;
+    float: left;
+  }
+  .product {
+    margin-left: 15px;
+    width: 400px;
+    height: 70px;
+    float: left;
+  }
+  .pn {
+    color: black;
+    max-width: 370px;
+    max-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 1;
+   margin-bottom: 5px;
+  }
+  .quantity {
+    padding: 5px 0px;
+    width: 130px;
+  }
+  .price {
+    float: left;
+    color: #249aa0;
+    width: 120px;
+    margin-left: 20px;
+     max-width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 1;
+   margin-bottom: 5px;
+  }
+  .delete {
+    float: left;
+    margin-left: 50px;
+  }
+  .delete a {
+    color: #c3c2c2;
+  }
+  .delete a:hover {
+    color: #a09f9f;
+  }
+  button.btn.btn-default.btn-number {
+    border: #a9a6a6 solid 1px !important;
+  }
+  .total-header {
+    border-bottom: solid 1px #eee;
+    background-color: #fafafa;
+    height: 50px;
+    padding: 5px 0px 5px 20px;
+  }
+  .total-header p{
+    margin: 0;
+    font-size: 20px;
+    height: 20px;
+  }
+  .total{
+    border: solid 1px #ddd;
+    background-color: #fff;
+    height: 255px;
+  }
+  .total-detail {
+    margin: 20px;
+    color: #a9a6a6;
+  }
+  #total-top {
+    margin-bottom: 20px;
+  }
+  #total-text {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    width: 320px;
+  }
+  #total-all {
+    color: #249aa0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    width: 120px; 
+    text-align: right;
+  }
+  #bayar {
+    color: white;
+    background-color: #3eb3b9; 
+  }
+  #bayar:hover {
+    background-color: #249aa0; 
+  }
+
+  /*khusus user*/
+  #jual {
+    background-color: white;
+    border-color: #3eb3b9;
+    color: #3eb3b9;
+    margin-bottom: 15px;
+    transition: .2s;
+  }
+  #jual:hover {
+    background-color: #3eb3b9;
+    border-color: #3eb3b9;
+    color: white;
+  }
+  .profilnav {
+    padding-left: 0 !important;
+  }
+  .profilnav li{
+    list-style-type: none;
+  }
+  .profilnav li a{
+    text-decoration: none;
+    color: #777;
+    padding-left: 5px;
+  }
+  .profilnav li a:hover{
+    text-decoration: none;
+    color: #3eb3b9;
+  }
+  .profilnav li:hover{
+    background-color: #fafafa;
+  }
+  .profilnav li.active a{
+    color: #3eb3b9;
+    font-weight: 600;
+  }
+  .ah {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .poto {
+    position: relative;
+    max-height: 226px;
+    max-width: 226px;
+    border: 1px solid #3eb3b9;
+    float: left;
+    padding-bottom: 0;
+  }
+  .pb {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+  .pb:hover {
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .pp {
+    max-height: 226px;
+    max-width: 226px;
+  }
+  .object-fit-cover {
+    max-height: 224px;
+    width: 100%;
+    object-fit: cover; /*magic*/
+  }
+  .profil-detail {
+    float: left;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  .profil-detail h2 {
+    margin-top: 0;
+    font-size: 23px;
+  }
+  .akun {
+    padding-left: 10px;
+    max-height: 200px;
+  }
+  #edit {
+    margin: 15px 0px 0px 0px;
+  }
+
+  /*khusus user edit*/
+  .editForm .input-group {
+    width: 350px;
+  }
+  .editForm .input-group .form-control {
+    margin: 5px 0px 5px 0px;
+    font-size: 15px;
+    height: 37px; 
+    border-radius: 0.2em !important;
+  }
+  #save {
+    margin-top: 5px;
+  }
+
+  /*khusus list produk*/
+  .jumlah {
+    margin-left: 25px;
+    float: left;
+  }
+
+  /*khusus tambah iklan*/
+  .editForm .input-group .deskripsi {
+    height: 75px;
+  }

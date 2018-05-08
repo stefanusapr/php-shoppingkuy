@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="col-sm-3 col-md-8">
+        <form class="navbar-form navbar-center" role="search">
+        <div class="input-group searchbar">
+            <input type="text" class="form-control" placeholder="Aku mau belanja.." name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" id="login" data-toggle="dropdown">Login</a>
+          <ul class="dropdown-menu">
+            <li style="width: 280px;">
+              <form class="form-horizontal">
+                <div class="form-group donotchange">
+                <div class="col-xs-8">
+                  <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                </div>
+                <div class="form-group donotchange">
+                  <div class="col-xs-8">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group donotchange">
+                    <input type="submit" id="loginbutton" class="btn btn-default" value="Login"></input>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="btn-nav">
+          <a class="btn btn-default btn-sm navbar-btn" href="register.html">Daftar!</a></div>
+        </li>
+        <li><div style="width: 20px;"></div></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="band" class="container">
+  <div class="row" style="margin-bottom: 10px;">
+    <p class="page">Halaman Utama > Pencarian > Dia</p>
+    <hr class="style1">
+    <h3 id="searchname">Hasil pencarian "Dia"</h3>
+    <hr class="style1">
+  </div>
+  <div class="col-md-2" style="padding-left: 0;">
+    <p>Cari lebih detail</p>
+    <div class="category">
+    <p style="margin: 0px 10px;">Kategori</p>
+      <ul style="padding-left: 30px;">
+        <li><a href="">Hobi & Koleksi</a></li>
+        <li><a href="">Olahraga</a></li>
+        <li><a href="">Elektronik</a></li>
+        <li><a href="">Fashion Pria</a></li>
+        <li><a href="">Fashion Wanita</a></li>
+        <li><a href="">Komputer</a></li>
+        <li><a href="">Perlengkapan Bayi</a></li>
+        <li><a href="">Rumah Tangga</a></li>
+        <li><a href="">Fashion Anak</a></li>
+        <li><a href="">Perlengkapan Kantor</a></li>
+        <li><a href="">Handphone</a></li>
+        <li><a href="">Motor</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-10">  
+    <div class="row text-center">
+      <div class="col-sm-3">
+        <div class="thumbnail ts">
+          <img src="img/item/imm.jpeg" alt="Paris" width="400" height="300">
+          <p><strong>Dia suka yang lain</strong></p>
+          <p>Rp.65000</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Add to Chart</button>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="thumbnail ts">
+          <img src="img/item/imm.jpeg" alt="New York" width="400" height="300">
+          <p><strong>Dia udah punya gandengan</strong></p>
+          <p>Rp.65000</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Add to Chart</button>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="thumbnail ts">
+          <img src="img/item/imm.jpeg" alt="San Francisco" width="400" height="300">
+          <p><strong>Dia bersama yang lain T.T</strong></p>
+          <p>Rp.65000</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Add to Chart</button>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="thumbnail ts">
+          <img src="img/item/imm.jpeg" alt="San Francisco" width="400" height="300">
+          <p><strong>Dia diambil temen</strong></p>
+          <p>Rp.65000</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Add to Chart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-sm-3">
+        <div class="thumbnail ts">
+          <img src="img/item/imm.jpeg" alt="Paris" width="400" height="300">
+          <p><strong>Dia dia dia . .</strong></p>
+          <p>Rp.65000</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Add to Chart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Modified By Chandra</p> 
+</footer>
+
+</body>
+</html>
